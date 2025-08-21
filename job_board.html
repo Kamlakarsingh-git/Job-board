@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Board</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Navbar */
+    nav {
+      background: #fff;
+      padding: 15px 5%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    nav .logo {
+      font-size: 20px;
+      font-weight: bold;
+      color: #00c16e;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+      font-size: 14px;
+    }
+
+    .btn {
+      background: #00c16e;
+      color: white;
+      padding: 8px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    .btn:hover {
+      background: #00a85a;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(120deg, #007bff, #00c6ff);
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    .hero h1 {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+
+    .hero .btn-upload {
+      background: #00c16e;
+      padding: 12px 20px;
+      font-size: 16px;
+    }
+
+    /* Search Section */
+    .search-box {
+      display: flex;
+      justify-content: center;
+      margin-top: -30px;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .search-box input, 
+    .search-box select {
+      padding: 10px;
+      margin: 0 5px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      flex: 1;
+    }
+
+    .search-box button {
+      background: #00c16e;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    /* Footer */
+    footer {
+      background: #f4f4f4;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">Job Board</div>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Browse Job</a></li>
+      <li><a href="#">Pages</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <button class="btn">Post A Job</button>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <p>4536+ Jobs listed</p>
+    <h1>Find your Dream Job</h1>
+    <p>We provide online instant jobs with quick approval that suit your career goals.</p>
+    <button class="btn btn-upload">Upload Your Resume</button>
+  </section>
+
+  <!-- Search Section -->
+  <div class="search-box">
+    <input type="text" placeholder="Search keyword">
+    <input type="text" placeholder="Location">
+    <select>
+      <option>Category</option>
+      <option>IT</option>
+      <option>Finance</option>
+      <option>Marketing</option>
+    </select>
+    <button>Find Job</button>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Job Board. All Rights Reserved.</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    document.querySelector(".btn-upload").addEventListener("click", function() {
+      alert("Resume upload feature coming soon!");
+    });
+
+    document.querySelector(".search-box button").addEventListener("click", function() {
+      alert("Job search functionality coming soon!");
+    });
+  </script>
+
+</body>
+</html>
